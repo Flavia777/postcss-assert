@@ -1,6 +1,6 @@
 {
   "name": "postcss-assert",
-  "version": "4.2.1",
+  "version": "1.0.0",
   "description": "Generate spritesheets from stylesheets",
   "main": "lib/index.js",
   "keywords": [
