@@ -352,7 +352,7 @@ export function saveSpritesheets(opts, images, spritesheets) {
 			)
 			.then(( res ) => {
 				if (!res) {
-					throw new Error('postcss-sprites: Spritesheet requires a relative path.');
+					throw new Error('postcss-assert: Spritesheet requires a relative path.');
 				}
 
 				if ( _.isString(res) ) {
@@ -596,8 +596,8 @@ export function isToken(commentValue) {
  */
 export function createLogger(enabled) {
 	if (enabled) {
-		debug.enable('postcss-sprites');
+		debug.enable('postcss-assert');
 	}
 
-	return debug('postcss-sprites');
+	return debug('postcss-assert');
 }

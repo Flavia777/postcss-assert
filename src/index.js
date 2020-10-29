@@ -18,7 +18,7 @@ import {
 /**
  * Plugin registration.
  */
-export default postcss.plugin('postcss-sprites', (options = {}) => {
+export default postcss.plugin('postcss-assert', (options = {}) => {
 	return (css, result) => {
 		// Extend defaults
 		const opts = _.merge({}, defaults, options);
@@ -43,7 +43,7 @@ export default postcss.plugin('postcss-sprites', (options = {}) => {
 				opts.logger(`${spritesheets.length} ${spritesheets.length > 1 ? 'spritesheets' : 'spritesheet'} generated.`);
 			})
 			.catch((err) => {
-				console.error(`postcss-sprites: An error occurred while processing files - ${err.message}`);
+				console.error(`postcss-assert: An error occurred while processing files - ${err.message}`);
 				console.error(err.stack);
 				throw err;
 			});

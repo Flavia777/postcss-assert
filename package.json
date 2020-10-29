@@ -1,6 +1,6 @@
 {
   "name": "postcss-assert",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Generate spritesheets from stylesheets",
   "main": "lib/index.js",
   "keywords": [
@@ -20,7 +20,7 @@
     "prepublish": "npm test",
     "pretest": "npm run build"
   },
-  "repository": "Flavia777/postcss-sprites",
+  "repository": "Flavia777/postcss-assert",
   "author": "Flavia777",
   "license": "MIT",
   "bugs": "https://github.com/Flavia777/postcss-assert",
