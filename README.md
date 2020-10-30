@@ -1,4 +1,4 @@
-# postcss-sprites [![Build Status](https://travis-ci.org/2createStudio/postcss-sprites.svg?branch=master)](https://travis-ci.org/2createStudio/postcss-sprites) [![npm version](https://badge.fury.io/js/postcss-sprites.svg)](http://badge.fury.io/js/postcss-sprites)
+# postcss-assert
 
 > [PostCSS](https://github.com/postcss/postcss) plugin that generates spritesheets from your stylesheets.
 
@@ -21,7 +21,7 @@
 ```javascript
 var fs = require('fs');
 var postcss = require('postcss');
-var sprites = require('postcss-sprites');
+var sprites = require('postcss-assert');
 
 var css = fs.readFileSync('./css/style.css', 'utf8');
 var opts = {
@@ -265,7 +265,7 @@ Every filter or group function will be called with an ``Image`` object.
 Pull requests are welcome.
 
 ```
-$ git clone git@github.com:2createStudio/postcss-sprites.git
+$ git clone https://github.com/Flavia777/postcss-assert.git
 $ npm install
 $ npm run watch
 ```
